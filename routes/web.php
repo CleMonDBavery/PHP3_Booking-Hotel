@@ -30,5 +30,8 @@ Route::get('blog', function () {
 Route::get('contact', function () {
     return view('client.contact');
 })->name('contact');
+Route::get('account', function () {
+    return view('client.account');
+})->name('account');
 
 

@@ -39,6 +39,8 @@
                                 </li>
                                 <li class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">
                                     <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
+                                </li><li class="nav-item {{ request()->routeIs('account') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ route('account') }}">Account</a>
                                 </li>
                             </ul>
 

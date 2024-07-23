@@ -1,4 +1,6 @@
 @extends('layouts.client.app')
+@section('content')
+
 
 <div class="back_re">
     <div class="container">
@@ -25,7 +27,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room1.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room1.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -36,7 +38,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room2.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room2.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -47,7 +49,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room3.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room3.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -58,7 +60,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room4.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room4.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -69,7 +71,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room5.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room5.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -80,7 +82,7 @@
             <div class="col-md-4 col-sm-6">
                 <div id="serv_hover" class="room">
                     <div class="room_img">
-                        <figure><img src="images/room6.jpg" alt="#"/></figure>
+                        <figure><img src="{{asset('client/images/room6.jpg')}}" alt="#"/></figure>
                     </div>
                     <div class="bed_room">
                         <h3>Bed Room</h3>
@@ -91,4 +93,4 @@
         </div>
     </div>
 </div>
-<!-- end our_room -->
+@endsection

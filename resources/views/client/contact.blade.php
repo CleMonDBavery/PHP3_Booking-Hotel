@@ -1,6 +1,6 @@
 @extends('layouts.client.app')
 
-
+@section('content')
 <div class="back_re">
     <div class="container">
         <div class="row">
@@ -54,5 +54,5 @@
 <!-- end contact -->
 
 
-@section('content')
+
 @endsection

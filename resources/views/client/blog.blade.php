@@ -56,7 +56,7 @@
                 <div class="col-md-4">
                     <div class="blog_box">
                         <div class="blog_img">
-                            <figure><img src=" {{asset('client/images/blog3.jpg" alt="#" /></figure>
+                            <figure><img src=" {{asset('client/images/blog3.jpg')}}" alt="#" /></figure>
                         </div>
                         <div class="blog_room">
                             <h3>Bed Room</h3>

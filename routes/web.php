@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\Product\CategoryController as AdminCategoryController;
-use App\Http\Controllers\Client\Product\CategoryController as ClientCategoryController;
 
 
 // Route::get('/', [AdminCategoryController::class, 'index']);
@@ -15,20 +13,75 @@ use App\Http\Controllers\Client\Product\CategoryController as ClientCategoryCont
 Route::get('/', function () {
     return view('client.index');
 })->name('home');
+
 Route::get('about', function () {
     return view('client.about');
 })->name('about');
+
 Route::get('room', function () {
     return view('client.room');
 })->name('room');
+
 Route::get('gallery', function () {
     return view('client.gallery');
 })->name('gallery');
+
 Route::get('blog', function () {
     return view('client.blog');
 })->name('blog');
+
 Route::get('contact', function () {
     return view('client.contact');
 })->name('contact');
 
+Route::get('account', function () {
+    return view('client.account');
+})->name('account');
 
+
+Route::prefix('admin')->group(function () {
+    Route::get('/login', function () {
+        return view('admin.login');
+    })->name('login');
+
+    Route::get('/register', function () {
+        return view('admin.register');
+    })->name('register');
+
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
+
+    Route::get('/user', function () {
+        return view('admin.user');
+    })->name('user');
+
+    Route::get('/room_management', function () {
+        return view('admin.room');
+    })->name('room_management');
+
+
+    Route::get('/insertroom', function () {
+        return view('admin.insert_room');
+    })->name('insert_room');
+
+    Route::get('/insertuser', function () {
+        return view('admin.insert_user');
+    })->name('insert_user');
+
+    Route::get('/hotel', function () {
+        return view('admin.hotel');
+    })->name('hotel');
+
+    Route::get('/insert_hotel', function () {
+        return view('admin.insert_hotel');
+    })->name('insert_hotel');
+
+    Route::get('/service', function () {
+        return view('admin.service');
+    })->name('service');
+
+    Route::get('/insert_service', function () {
+        return view('admin.insert_service');
+    })->name('insert_service');
+});

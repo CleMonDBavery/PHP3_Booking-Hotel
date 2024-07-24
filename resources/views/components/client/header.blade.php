@@ -23,22 +23,25 @@
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('home') }}">Home</a>
+                                    <a class="nav-link" href="{{ route('home') }}">Trang chủ</a>
                                 </li>
                                 <li class="nav-item {{ request()->routeIs('about') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('about') }}">About</a>
+                                    <a class="nav-link" href="{{ route('about') }}">Giới thiệu</a>
                                 </li>
                                 <li class="nav-item {{ request()->routeIs('room') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('room') }}">Our room</a>
+                                    <a class="nav-link" href="{{ route('room') }}">Phòng</a>
                                 </li>
-                                <li class="nav-item {{ request()->routeIs('gallery') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
-                                </li>
+                                {{--                                <li class="nav-item {{ request()->routeIs('gallery') ? 'active' : '' }}">--}}
+                                {{--                                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>--}}
+                                {{--                                </li>--}}
                                 <li class="nav-item {{ request()->routeIs('blog') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('blog') }}">Blog</a>
+                                    <a class="nav-link" href="{{ route('blog') }}">Bài viết</a>
                                 </li>
                                 <li class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">
-                                    <a class="nav-link" href="{{ route('contact') }}">Contact Us</a>
+                                    <a class="nav-link" href="{{ route('contact') }}">Liên hệ</a>
+                                </li>
+                                <li class="nav-item {{ request()->routeIs('account') ? 'active' : '' }}">
+                                    <a class="nav-link" href="{{ route('account') }}">Tài khoản</a>
                                 </li>
                             </ul>
 

@@ -1,12 +1,14 @@
 @extends('layouts.client.app')
-
-
+@section('title')
+    <title> Liên Hệ</title>
+@endsection
+@section('content')
 <div class="back_re">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
-                    <h2>Contact Us</h2>
+                    <h2>Liên hệ</h2>
                 </div>
             </div>
         </div>
@@ -20,20 +22,20 @@
                 <form id="request" class="main_form">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <input class="contactus" placeholder="Name" type="type" name="Name">
+                            <input class="contactus" placeholder="Họ và tên" type="type" name="Name">
                         </div>
                         <div class="col-md-12">
                             <input class="contactus" placeholder="Email" type="type" name="Email">
                         </div>
                         <div class="col-md-12">
-                            <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                            <input class="contactus" placeholder="Số điện thoại" type="type" name="Phone Number">
                         </div>
                         <div class="col-md-12">
-                            <textarea class="textarea" placeholder="Message" type="type"
-                                      Message="Name">Message</textarea>
+                            <textarea class="textarea" placeholder="Tin nhắn" type="type"
+                                      Message="Name"></textarea>
                         </div>
                         <div class="col-md-12">
-                            <button class="send_btn">Send</button>
+                            <button class="send_btn">Liên hệ</button>
                         </div>
                     </div>
                 </form>
@@ -53,6 +55,4 @@
 </div>
 <!-- end contact -->
 
-
-@section('content')
 @endsection

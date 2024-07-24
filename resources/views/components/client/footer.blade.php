@@ -3,29 +3,44 @@
         <div class="container">
             <div class="row">
                 <div class=" col-md-4">
-                    <h3>Contact US</h3>
+                    <h3>Liên Hệ </h3>
                     <ul class="conta">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Address</li>
-                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ninh Kiều, Cần Thơ</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +84 364911491</li>
                         <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> demo@gmail.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3>Menu Link</h3>
+                    <h3>Trang</h3>
                     <ul class="link_menu">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="about.html"> about</a></li>
-                        <li><a href="room.html">Our Room</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('home') }}">Trang chủ</a>
+                        </li>
+                        <li class="nav-item {{ request()->routeIs('about') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('about') }}">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item {{ request()->routeIs('room') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('room') }}">Phòng</a>
+                        </li>
+                        {{--                                <li class="nav-item {{ request()->routeIs('gallery') ? 'active' : '' }}">--}}
+                        {{--                                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>--}}
+                        {{--                                </li>--}}
+                        <li class="nav-item {{ request()->routeIs('blog') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('blog') }}">Bài viết</a>
+                        </li>
+                        <li class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('contact') }}">Liên hệ</a>
+                        </li>
+                        <li class="nav-item {{ request()->routeIs('account') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('account') }}">Tài khoản</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3>News letter</h3>
+                    <h3>Đăng kí nhận thông tin</h3>
                     <form class="bottom_form">
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
+                        <input class="enter" placeholder="Email" type="text" name="Email">
+                        <button class="sub_btn">Đăng kí</button>
                     </form>
                     <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -42,10 +57,7 @@
                     <div class="col-md-10 offset-md-1">
 
                         <p>
-                            © 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html
-                                Templates</a>
-                            <br><br>
-                            Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+                            © 2024 Keto
                         </p>
 
                     </div>

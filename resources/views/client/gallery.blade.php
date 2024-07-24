@@ -1,9 +1,5 @@
 @extends('layouts.client.app')
 
-
-
-
-
 @section('content')
     <div class="back_re">
         <div class="container">
